@@ -3,7 +3,7 @@
 
 from flask import Flask, render_template
 
-DEVELOPMENT_ENV  = True
+DEVELOPMENT_ENV = True
 
 app = Flask(__name__)
 
@@ -38,4 +38,4 @@ def contact():
 
 
 if __name__ == '__main__':
-    app.run(debug=DEVELOPMENT_ENV)
+    app.run(debug=DEVELOPMENT_ENV, port=5000)
